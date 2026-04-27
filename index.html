@@ -2,35 +2,88 @@
 <html>
 <head>
     <title>Meghana | Cybersecurity Portfolio</title>
+
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: #334155;
+        }
+
+        a {
+            color: #22c55e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body style="background:black; color:white; font-family:Arial; padding:40px;">
+
+<body>
+
+<div class="container">
 
 <h1>Meghana Gutla</h1>
-<p>Cybersecurity Engineer | PKI | NIDS</p>
+<p class="subtitle">Cybersecurity Engineer | PKI | NIDS | Security Engineering</p>
 
 <h2>About Me</h2>
 <p>
 Cybersecurity Engineer specializing in Network Security, PKI, and Intrusion Detection Systems.
-Currently building ML-based detection systems for EV charging infrastructure, focusing on identifying DoS attacks and anomalous traffic patterns.
+Currently building ML-based detection systems for EV charging infrastructure, focusing on detecting DoS attacks and anomalous traffic patterns.
 </p>
 
 <h2>Projects</h2>
 
-<div style="background:#1e293b; padding:15px; border-radius:10px; margin-top:15px;">
+<div class="card">
 <h3>NIDS for EV Charging Stations</h3>
 <p>
-- Built ML models (Random Forest, SVM)  
-- Detected DoS attacks using IoT-23 dataset  
-- Performed feature engineering & anomaly detection  
+Built ML models (Random Forest, SVM) to detect DoS attacks using IoT-23 dataset.
+Performed feature engineering, traffic analysis, and anomaly detection.
 </p>
 </div>
 
-<div style="background:#1e293b; padding:15px; border-radius:10px; margin-top:15px;">
+<div class="card">
 <h3>PKI & Certificate Lifecycle</h3>
 <p>
-- Worked on certificate lifecycle management  
-- Explored TLS security and automation  
-- Focused on enterprise PKI challenges  
+Worked on certificate lifecycle management, TLS security, and automation.
+Focused on enterprise PKI challenges like certificate expiry and trust management.
 </p>
 </div>
 
@@ -39,7 +92,11 @@ Currently building ML-based detection systems for EV charging infrastructure, fo
 SIEM | PKI | Network Security | Machine Learning | IAM | Python | Threat Detection
 </p>
 
+<h2>Contact</h2>
+<p>Email: meghanagutla544@gmail.com</p>
 <p>GitHub: <a href="https://github.com/meghanagutla">github.com/meghanagutla</a></p>
+
+</div>
 
 </body>
 </html>
