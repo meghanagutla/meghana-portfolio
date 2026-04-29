@@ -20,6 +20,12 @@
             max-width: 900px;
             margin: auto;
             padding: 40px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         h1 {
@@ -29,7 +35,7 @@
 
         .subtitle {
             color: #94a3b8;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
         h2 {
@@ -70,6 +76,7 @@
         .btn {
             display:inline-block;
             margin-top:10px;
+            margin-bottom:10px;
             padding:10px 16px;
             background:#38bdf8;
             color:black;
@@ -80,6 +87,11 @@
 
         .btn:hover {
             opacity:0.8;
+        }
+
+        .secondary-link {
+            font-size:14px;
+            color:#94a3b8;
         }
     </style>
 </head>
@@ -103,44 +115,48 @@
         <h1>Meghana Gutla</h1>
         <hr style="width:60px; border:2px solid #38bdf8; margin:10px auto;">
         <p class="subtitle">Cybersecurity Engineer | PKI | NIDS | IAM | Security Engineering</p>
+
+        <p style="max-width:600px; margin:10px auto; color:#cbd5f5;">
+        Focused on securing real-world systems through Network Security, PKI, and Machine Learning-based threat detection.
+        </p>
     </div>
 
-<div style="text-align:center; margin-bottom:20px;">
-    <a href="Meghana_Resume.pdf" download class="btn" style="background:#22c55e;">
-        Download Resume
-    </a>
-</div>
+    <!-- RESUME BUTTON -->
+    <div style="text-align:center; margin-bottom:20px;">
+        <a href="Meghana_Resume.pdf" download class="btn" style="background:#22c55e;">
+            Download Resume
+        </a>
+    </div>
 
     <!-- ABOUT -->
-    <h2 id="about">About Me</h2>
+    <h2 id="about">👩‍💻 About Me</h2>
     <p>
     Cybersecurity Engineer with hands-on experience in Intrusion Detection Systems (NIDS), PKI, and secure system design.
     Focused on detecting real-world network attacks using Machine Learning and improving security for EV charging infrastructure.
     </p>
 
     <!-- PROJECTS -->
-    <h2 id="projects">Projects</h2>
+    <h2 id="projects">🚀 Projects</h2>
 
     <div class="card">
         <h3>NIDS for EV Charging Stations ⭐</h3>
         <a href="https://github.com/meghanagutla/nids-ev-charging-detection" target="_blank" class="btn">
             View Project
         </a>
+
         <p>
         Designed and implemented a Machine Learning-based Intrusion Detection System (NIDS) for EV charging infrastructure.
         Used Random Forest and SVM models to detect DoS attacks on IoT network traffic (IoT-23 dataset).
         </p>
 
         <p><strong>Impact:</strong> Detects DoS attacks and improves EV infrastructure security.</p>
-
         <p><strong>Learning:</strong> Feature engineering, ML model tuning, anomaly detection.</p>
 
         <p>
-<a href="https://github.com/meghanagutla/nids-ev-charging-detection" target="_blank"
-style="font-size:14px; color:#94a3b8;">
-View Code on GitHub
-</a>
-</p>
+            <a href="https://github.com/meghanagutla/nids-ev-charging-detection" target="_blank" class="secondary-link">
+                View Code on GitHub
+            </a>
+        </p>
     </div>
 
     <div class="card">
@@ -156,12 +172,11 @@ View Code on GitHub
 
         <p><strong>Impact:</strong> Prevents outages and security risks from expired certificates.</p>
 
-<p>
-<a href="https://github.com/meghanagutla/pki-certificate-management" target="_blank"
-style="font-size:14px; color:#94a3b8;">
-View Code on GitHub
-</a>
-</p>
+        <p>
+            <a href="https://github.com/meghanagutla/pki-certificate-management" target="_blank" class="secondary-link">
+                View Code on GitHub
+            </a>
+        </p>
     </div>
 
     <div class="card">
@@ -175,26 +190,27 @@ View Code on GitHub
     </div>
 
     <!-- SKILLS -->
-    <h2>Skills</h2>
+    <h2>🛠 Skills</h2>
     <p>
     SIEM | PKI | Network Security | Machine Learning | IAM | Python | Threat Detection
     </p>
 
     <!-- TOOLS -->
-    <h2>Tools & Technologies</h2>
+    <h2>⚙️ Tools & Technologies</h2>
     <p>
     Python | Scikit-learn | Pandas | Wireshark | TCP/IP | TLS/SSL | Git | Linux
     </p>
 
     <!-- CONTACT -->
-    <h2 id="contact">Contact</h2>
-    <p>Email: meghanagutla544@gmail.com</p>
+    <h2 id="contact">📬 Contact</h2>
+    <p>Email: <a href="mailto:meghanagutla544@gmail.com">meghanagutla544@gmail.com</a></p>
+    <p>Location: India</p>
     <p>LinkedIn: <a href="https://linkedin.com/in/meghana-gutla">linkedin.com/in/meghana-gutla</a></p>
     <p>GitHub: <a href="https://github.com/meghanagutla">github.com/meghanagutla</a></p>
 
     <hr style="margin-top:40px;">
-    <p style="text-align:center; color:#94a3b8;">
-    © 2026 Meghana Gutla | Cybersecurity Portfolio
+    <p style="text-align:center; color:#64748b; font-size:14px;">
+    © 2026 Meghana Gutla • Built with HTML & CSS
     </p>
 
 </div>
