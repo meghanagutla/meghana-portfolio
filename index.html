@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Meghana | Cybersecurity Portfolio</title>
 
 <style>
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
-/* BACKGROUND */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    color: #e2e8f0; /* keep your current text */
+    color: #e2e8f0;
     background: radial-gradient(circle at top, #1e3a8a, #020617);
 }
 
-@keyframes gradientMove {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-}
-
+/* CONTAINER */
 .container {
-    max-width: 950px;
+    max-width: 1000px;
     margin: auto;
     padding: 40px;
 }
@@ -32,65 +25,51 @@ body {
 .navbar {
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
 
 .navbar a {
     margin-left:20px;
     color:#94a3b8;
-    transition:0.3s;
+    text-decoration:none;
 }
 
 .navbar a:hover {
     color:#38bdf8;
 }
 
-/* HEADER */
-.header {
-    text-align:center;
+/* HERO */
+.hero {
+    display:flex;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
     margin-bottom:30px;
 }
 
 .profile {
-    width:130px;
-    height:130px;
+    width:140px;
+    height:140px;
     border-radius:50%;
+    object-fit:cover;
     border:3px solid #38bdf8;
     box-shadow:0 0 20px #38bdf8;
-    object-fit:cover;
-}
-
-h1 {
-    font-size:42px;
-    margin:10px 0;
 }
 
 .subtitle {
     color:#94a3b8;
 }
 
-.intro {
-    max-width:600px;
-    margin:10px auto;
-    color:#cbd5f5;
-}
-
 /* BUTTON */
 .btn {
     display:inline-block;
-    margin-top:15px;
-    padding:12px 20px;
+    margin-top:10px;
+    padding:10px 18px;
+    background:#38bdf8;
+    color:black;
     border-radius:8px;
     font-weight:bold;
-    background: linear-gradient(45deg, #38bdf8, #22c55e);
-    color:black;
-    transition:0.3s;
-    box-shadow:0 0 10px rgba(56,189,248,0.5);
-}
-
-.btn:hover {
-    transform:scale(1.05);
+    text-decoration:none;
 }
 
 /* SECTIONS */
@@ -104,32 +83,32 @@ h2 {
 .card {
     margin-top:20px;
     padding:20px;
-    border-radius:15px;
-    background: rgba(30,41,59,0.4);
-    backdrop-filter: blur(12px);
-    border:1px solid rgba(255,255,255,0.1);
+    border-radius:12px;
+    background:#1e293b;
     transition:0.3s;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
 .card:hover {
-    transform:translateY(-10px);
-    box-shadow:0 0 30px rgba(56,189,248,0.4);
+    transform: translateY(-6px);
 }
 
-/* PROJECT ICON */
-.icon {
-    font-size:28px;
+.project-img {
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
 }
 
-/* LINKS */
-a {
-    text-decoration:none;
+/* SKILLS */
+.skills {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
-.secondary {
-    font-size:14px;
-    color:#94a3b8;
+.skill {
+    background:#1e293b;
+    padding:8px 12px;
+    border-radius:8px;
 }
 
 /* FOOTER */
@@ -147,7 +126,7 @@ footer {
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <div><strong>Meghana</strong></div>
+    <div><strong>Detection Lab</strong></div>
     <div>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -155,54 +134,144 @@ footer {
     </div>
 </div>
 
-<!-- HEADER -->
-<div class="header">
-    <img src="profile.jpeg" alt="Meghana Profile" class="profile">
-    <h1>Meghana Gutla</h1>
-    <p class="subtitle">Cybersecurity Engineer | PKI | NIDS | IAM</p>
-    <p class="intro">
-    Building secure systems using Machine Learning, Network Security, and PKI.
-    </p>
+<!-- HERO -->
+<div class="hero">
 
-    <a href="Meghana_Resume.pdf" class="btn">Download Resume</a>
+    <img src="profile.jpeg" class="profile">
+
+    <div>
+        <h1>Meghana Gutla</h1>
+        <p class="subtitle">Cybersecurity Engineer | PKI | NIDS | IAM</p>
+
+        <p>
+        I design secure systems using Machine Learning, Network Security, and PKI.
+        Focused on detecting real-world attacks and strengthening infrastructure security.
+        </p>
+
+        <a href="Meghana_Resume.pdf" class="btn">Download Resume</a>
+    </div>
+
 </div>
 
 <!-- ABOUT -->
 <h2 id="about">About</h2>
 <p>
-Cybersecurity Engineer focused on intrusion detection, PKI systems, and enterprise security design.
+Cybersecurity Engineer with hands-on experience in Intrusion Detection Systems (NIDS), PKI, and Identity & Access Management.
+Passionate about detecting cyber threats and building secure systems.
 </p>
 
 <!-- PROJECTS -->
 <h2 id="projects">Projects</h2>
 
 <div class="card">
-    <div class="icon">🛡️</div>
-    <h3>NIDS for EV Charging ⭐</h3>
-    <a href="https://github.com/meghanagutla/nids-ev-charging-detection" class="btn">View Project</a>
-    <p>ML-based detection of DoS attacks in EV charging infrastructure.</p>
+<img src="nids.png" class="project-img">
+
+<h3>NIDS for EV Charging ⭐</h3>
+
+<a href="https://github.com/meghanagutla/nids-ev-charging-detection" class="btn">View Project</a>
+
+<p>
+<strong>Problem:</strong><br>
+EV charging networks are vulnerable to DoS attacks affecting availability.
+
+<br><br>
+
+<strong>Approach:</strong><br>
+- Used IoT-23 dataset for traffic analysis<br>
+- Applied Random Forest and SVM models<br>
+- Performed feature engineering and anomaly detection<br>
+
+<br>
+
+<strong>Result:</strong><br>
+- Detected abnormal traffic patterns<br>
+- Improved DoS attack detection accuracy<br>
+
+<br>
+
+<strong>Tools Used:</strong><br>
+Python, Scikit-learn, Wireshark
+</p>
+
+<p>
+<strong>Key Learnings:</strong><br>
+- Importance of feature selection in ML<br>
+- Challenges in real-time anomaly detection
+</p>
+
 </div>
 
 <div class="card">
-    <div class="icon">🔐</div>
-    <h3>PKI Certificate Lifecycle</h3>
-    <a href="https://github.com/meghanagutla/pki-certificate-management" class="btn">View Project</a>
-    <p>Certificate management, TLS security, and automation.</p>
+<img src="pki.png" class="project-img">
+
+<h3>PKI Certificate Lifecycle</h3>
+
+<a href="https://github.com/meghanagutla/pki-certificate-management" class="btn">View Project</a>
+
+<p>
+<strong>Problem:</strong><br>
+Manual certificate management leads to expiry risks and security gaps.
+
+<br><br>
+
+<strong>Approach:</strong><br>
+- Studied certificate lifecycle management<br>
+- Explored TLS/SSL protocols<br>
+- Analyzed automation strategies<br>
+
+<br>
+
+<strong>Result:</strong><br>
+- Identified key risks in certificate handling<br>
+- Improved understanding of enterprise PKI systems<br>
+
+<br>
+
+<strong>Tools/Concepts:</strong><br>
+X.509, TLS, Certificate Management
+</p>
+
+<p>
+<strong>Key Learnings:</strong><br>
+- Importance of certificate automation<br>
+- Risks of improper trust chain management
+</p>
+
 </div>
 
 <div class="card">
-    <div class="icon">👤</div>
-    <h3>IAM Security Architecture</h3>
-    <p>RBAC-based identity access control system.</p>
+
+<h3>IAM Security Architecture</h3>
+
+<p>
+Designed an Identity and Access Management system using RBAC principles.
+Focused on authentication, authorization, and secure access control.
+</p>
+
+<p>
+<strong>Key Learnings:</strong><br>
+- Importance of least privilege principle<br>
+- Role-based access improves security management
+</p>
+
 </div>
 
 <!-- SKILLS -->
 <h2>Skills</h2>
-<p>SIEM | PKI | Network Security | ML | IAM | Python</p>
+
+<div class="skills">
+<span class="skill">SIEM</span>
+<span class="skill">PKI</span>
+<span class="skill">NIDS</span>
+<span class="skill">Machine Learning</span>
+<span class="skill">Python</span>
+<span class="skill">IAM</span>
+</div>
 
 <!-- CONTACT -->
 <h2 id="contact">Contact</h2>
 <p>Email: <a href="mailto:meghanagutla544@gmail.com">meghanagutla544@gmail.com</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/meghana-gutla">linkedin.com/in/meghana-gutla</a></p>
 <p>GitHub: <a href="https://github.com/meghanagutla">github.com/meghanagutla</a></p>
 
 <footer>
