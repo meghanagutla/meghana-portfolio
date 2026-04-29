@@ -1,217 +1,215 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Meghana | Cybersecurity Portfolio</title>
+<title>Meghana | Cybersecurity Portfolio</title>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+<style>
+html {
+    scroll-behavior: smooth;
+}
 
-        body {
-            background-color: #0f172a;
-            color: #e2e8f0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
+/* BACKGROUND */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #e2e8f0;
+    background: linear-gradient(-45deg, #020617, #0f172a, #020617, #020617);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px;
-            animation: fadeIn 1s ease-in;
-        }
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 40px;
+}
 
-        h1 {
-            font-size: 40px;
-            margin-bottom: 5px;
-        }
+/* NAVBAR */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
 
-        .subtitle {
-            color: #94a3b8;
-            margin-bottom: 10px;
-        }
+.navbar a {
+    margin-left:20px;
+    color:#94a3b8;
+    transition:0.3s;
+}
 
-        h2 {
-            color: #38bdf8;
-            margin-top: 50px;
-            border-bottom: 1px solid #334155;
-            padding-bottom: 5px;
-        }
+.navbar a:hover {
+    color:#38bdf8;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 20px;
-            transition: 0.3s;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        }
+/* HEADER */
+.header {
+    text-align:center;
+    margin-bottom:30px;
+}
 
-        .card:hover {
-            transform: translateY(-8px) scale(1.02);
-            background: #334155;
-        }
+.profile {
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:3px solid #38bdf8;
+    box-shadow:0 0 20px #38bdf8;
+    object-fit:cover;
+}
 
-        a {
-            color: #22c55e;
-            text-decoration: none;
-        }
+h1 {
+    font-size:42px;
+    margin:10px 0;
+}
 
-        a:hover {
-            text-decoration: underline;
-            opacity: 0.8;
-        }
+.subtitle {
+    color:#94a3b8;
+}
 
-        p {
-            line-height: 1.6;
-        }
+.intro {
+    max-width:600px;
+    margin:10px auto;
+    color:#cbd5f5;
+}
 
-        .btn {
-            display:inline-block;
-            margin-top:10px;
-            margin-bottom:10px;
-            padding:10px 16px;
-            background:#38bdf8;
-            color:black;
-            border-radius:8px;
-            font-weight:bold;
-            transition:0.3s;
-        }
+/* BUTTON */
+.btn {
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    background: linear-gradient(45deg, #38bdf8, #22c55e);
+    color:black;
+    transition:0.3s;
+    box-shadow:0 0 10px rgba(56,189,248,0.5);
+}
 
-        .btn:hover {
-            opacity:0.8;
-        }
+.btn:hover {
+    transform:scale(1.05);
+}
 
-        .secondary-link {
-            font-size:14px;
-            color:#94a3b8;
-        }
-    </style>
+/* SECTIONS */
+h2 {
+    margin-top:50px;
+    border-left:4px solid #38bdf8;
+    padding-left:10px;
+}
+
+/* CARDS */
+.card {
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    background: rgba(30,41,59,0.4);
+    backdrop-filter: blur(12px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(56,189,248,0.4);
+}
+
+/* PROJECT ICON */
+.icon {
+    font-size:28px;
+}
+
+/* LINKS */
+a {
+    text-decoration:none;
+}
+
+.secondary {
+    font-size:14px;
+    color:#94a3b8;
+}
+
+/* FOOTER */
+footer {
+    text-align:center;
+    margin-top:40px;
+    color:#64748b;
+}
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- NAVBAR -->
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:30px; border-bottom:1px solid #334155; padding-bottom:10px;">
-        <div style="font-weight:bold; font-size:18px;">Meghana</div>
-        <div>
-            <a href="#about" style="margin-right:15px;">About</a>
-            <a href="#projects" style="margin-right:15px;">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><strong>Meghana</strong></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
+</div>
 
-    <!-- HEADER -->
-    <div style="text-align:center;">
-        <h1>Meghana Gutla</h1>
-        <hr style="width:60px; border:2px solid #38bdf8; margin:10px auto;">
-        <p class="subtitle">Cybersecurity Engineer | PKI | NIDS | IAM | Security Engineering</p>
-
-        <p style="max-width:600px; margin:10px auto; color:#cbd5f5;">
-        Focused on securing real-world systems through Network Security, PKI, and Machine Learning-based threat detection.
-        </p>
-    </div>
-
-    <!-- RESUME BUTTON -->
-    <div style="text-align:center; margin-bottom:20px;">
-        <a href="Meghana_Resume.pdf" download class="btn" style="background:#22c55e;">
-            Download Resume
-        </a>
-    </div>
-
-    <!-- ABOUT -->
-    <h2 id="about">👩‍💻 About Me</h2>
-    <p>
-    Cybersecurity Engineer with hands-on experience in Intrusion Detection Systems (NIDS), PKI, and secure system design.
-    Focused on detecting real-world network attacks using Machine Learning and improving security for EV charging infrastructure.
+<!-- HEADER -->
+<div class="header">
+    <img src="profile.jpg" class="profile">
+    <h1>Meghana Gutla</h1>
+    <p class="subtitle">Cybersecurity Engineer | PKI | NIDS | IAM</p>
+    <p class="intro">
+    Building secure systems using Machine Learning, Network Security, and PKI.
     </p>
 
-    <!-- PROJECTS -->
-    <h2 id="projects">🚀 Projects</h2>
+    <a href="Meghana_Resume.pdf" class="btn">Download Resume</a>
+</div>
 
-    <div class="card">
-        <h3>NIDS for EV Charging Stations ⭐</h3>
-        <a href="https://github.com/meghanagutla/nids-ev-charging-detection" target="_blank" class="btn">
-            View Project
-        </a>
+<!-- ABOUT -->
+<h2 id="about">About</h2>
+<p>
+Cybersecurity Engineer focused on intrusion detection, PKI systems, and enterprise security design.
+</p>
 
-        <p>
-        Designed and implemented a Machine Learning-based Intrusion Detection System (NIDS) for EV charging infrastructure.
-        Used Random Forest and SVM models to detect DoS attacks on IoT network traffic (IoT-23 dataset).
-        </p>
+<!-- PROJECTS -->
+<h2 id="projects">Projects</h2>
 
-        <p><strong>Impact:</strong> Detects DoS attacks and improves EV infrastructure security.</p>
-        <p><strong>Learning:</strong> Feature engineering, ML model tuning, anomaly detection.</p>
+<div class="card">
+    <div class="icon">🛡️</div>
+    <h3>NIDS for EV Charging ⭐</h3>
+    <a href="https://github.com/meghanagutla/nids-ev-charging-detection" class="btn">View Project</a>
+    <p>ML-based detection of DoS attacks in EV charging infrastructure.</p>
+</div>
 
-        <p>
-            <a href="https://github.com/meghanagutla/nids-ev-charging-detection" target="_blank" class="secondary-link">
-                View Code on GitHub
-            </a>
-        </p>
-    </div>
+<div class="card">
+    <div class="icon">🔐</div>
+    <h3>PKI Certificate Lifecycle</h3>
+    <a href="https://github.com/meghanagutla/pki-certificate-management" class="btn">View Project</a>
+    <p>Certificate management, TLS security, and automation.</p>
+</div>
 
-    <div class="card">
-        <h3>PKI & Certificate Lifecycle</h3>
-        <a href="https://github.com/meghanagutla/pki-certificate-management" target="_blank" class="btn">
-            View Project
-        </a>
+<div class="card">
+    <div class="icon">👤</div>
+    <h3>IAM Security Architecture</h3>
+    <p>RBAC-based identity access control system.</p>
+</div>
 
-        <p>
-        Worked on certificate lifecycle management, TLS security, and automation.
-        Focused on certificate expiry, trust chains, and secure communication.
-        </p>
+<!-- SKILLS -->
+<h2>Skills</h2>
+<p>SIEM | PKI | Network Security | ML | IAM | Python</p>
 
-        <p><strong>Impact:</strong> Prevents outages and security risks from expired certificates.</p>
+<!-- CONTACT -->
+<h2 id="contact">Contact</h2>
+<p>Email: <a href="mailto:meghanagutla544@gmail.com">meghanagutla544@gmail.com</a></p>
+<p>GitHub: <a href="https://github.com/meghanagutla">github.com/meghanagutla</a></p>
 
-        <p>
-            <a href="https://github.com/meghanagutla/pki-certificate-management" target="_blank" class="secondary-link">
-                View Code on GitHub
-            </a>
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>IAM Security Architecture</h3>
-        <p>
-        Designed IAM framework using RBAC principles.
-        Focused on authentication, authorization, and identity lifecycle management.
-        </p>
-
-        <p><strong>Impact:</strong> Reduces unauthorized access risks in enterprise systems.</p>
-    </div>
-
-    <!-- SKILLS -->
-    <h2>🛠 Skills</h2>
-    <p>
-    SIEM | PKI | Network Security | Machine Learning | IAM | Python | Threat Detection
-    </p>
-
-    <!-- TOOLS -->
-    <h2>⚙️ Tools & Technologies</h2>
-    <p>
-    Python | Scikit-learn | Pandas | Wireshark | TCP/IP | TLS/SSL | Git | Linux
-    </p>
-
-    <!-- CONTACT -->
-    <h2 id="contact">📬 Contact</h2>
-    <p>Email: <a href="mailto:meghanagutla544@gmail.com">meghanagutla544@gmail.com</a></p>
-    <p>Location: India</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/meghana-gutla">linkedin.com/in/meghana-gutla</a></p>
-    <p>GitHub: <a href="https://github.com/meghanagutla">github.com/meghanagutla</a></p>
-
-    <hr style="margin-top:40px;">
-    <p style="text-align:center; color:#64748b; font-size:14px;">
-    © 2026 Meghana Gutla • Built with HTML & CSS
-    </p>
+<footer>
+© 2026 Meghana Gutla
+</footer>
 
 </div>
 
